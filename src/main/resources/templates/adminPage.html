@@ -1,0 +1,83 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apam bootStrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
+
+
+</head>
+<body>
+<h2 th:text="${appuser.getEmail}"></h2>
+<div class="container " >
+   <div class="row">
+       <div class="col col-md-3">
+          <a th:href="@{/admin/add_product_ui}" style="text-decoration:none;color:green;">
+           <div class="card my-5 bg-info rounded shadow-lg" style="width:15rem;cursor:pointer">
+               <h2 class="card-img-top text-center" style="font-size:100px;color:green">&#43;</h2>
+               <div class="card-body">
+                   <h4 class="card-title text-center"style="font-family:sans-serif;color:green">Add Product</h4>
+               </div>
+           </div>
+          </a>
+       </div>
+       <div class="col col-md-3">
+           <a href="#" style="text-decoration:none;color:green;">
+               <div class="card my-5 bg-warning rounded shadow-lg" style="width:15rem;cursor:pointer">
+                   <h2 class="card-img-top text-center mt-5" style="font-size:50px;color:green"><i class="fa fa-edit" aria-hidden="true"></i></h2>
+                   <div class="card-body">
+                       <h4 class="card-title text-center mt-3"style="font-family:sans-serif;color:green">Edit Product</h4>
+                   </div>
+               </div>
+           </a>
+       </div>
+       <div class="col col-md-3">
+           <a href="#" style="text-decoration:none;color:green;">
+               <div class="card my-5 bg-danger rounded shadow-lg" style="width:15rem;cursor:pointer">
+                   <h2 class="card-img-top text-center mt-5" style="font-size:50px;color:green"><i class="fa fa-trash" aria-hidden="true"></i></h2>
+                   <div class="card-body">
+                       <h4 class="card-title text-center mt-3"style="font-family:sans-serif;color:green">Remove Product</h4>
+                   </div>
+               </div>
+           </a>
+       </div>
+       <div class="col col-md-3">
+           <a href="#" style="text-decoration:none;color:green;">
+               <div class="card my-5 bg-success rounded shadow-lg" style="width:15rem;cursor:pointer">
+                   <h2 class="card-img-top text-center mt-5" style="font-size:50px;color:black"><i class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                   <div class="card-body">
+                       <h4 class="card-title text-center mt-3"style="font-family:sans-serif;color:black">Orders Received</h4>
+                   </div>
+               </div>
+           </a>
+       </div>
+       <div class="col col-md-3">
+           <a href="#" style="text-decoration:none;color:secondary;">
+               <div class="card my-5 bg-info rounded shadow-lg" style="width:15rem;cursor:pointer">
+                   <h2 class="card-img-top text-center mt-5" style="font-size:50px;color:green"><i class="fa fa-ban" aria-hidden="true"></i></h2>
+                   <div class="card-body">
+                       <h4 class="card-title text-center mt-3"style="font-family:sans-serif;color:green">Cancel Oders</h4>
+                   </div>
+               </div>
+           </a>
+       </div>
+       <div class="col col-md-3">
+           <a href="#" style="text-decoration:none;color:success;">
+               <div class="card my-5 bg-info rounded shadow-lg" style="width:15rem;cursor:pointer">
+                   <h2 class="card-img-top text-center mt-5" style="font-size:50px;color:green"><i class="fa fa-handshake" aria-hidden="true"></i></h2>
+                   <div class="card-body">
+                       <h4 class="card-title text-center mt-3"style="font-family:sans-serif;color:green">Oders Delievered</h4>
+                   </div>
+               </div>
+           </a>
+       </div>
+   </div>
+
+</div>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
